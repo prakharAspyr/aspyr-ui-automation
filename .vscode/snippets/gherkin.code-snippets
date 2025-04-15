@@ -1,0 +1,18 @@
+{
+    "Given Step": {
+      "prefix": "given",
+      "body": "Given ${1:condition}",
+      "description": "Gherkin Given step"
+    },
+    "When Step": {
+      "prefix": "when",
+      "body": "When ${1:action}",
+      "description": "Gherkin When step"
+    },
+    "Then Step": {
+      "prefix": "then",
+      "body": "Then ${1:expected outcome}",
+      "description": "Gherkin Then step"
+    }
+  }
+  
