@@ -21,6 +21,13 @@ jobs:
       - name: Run Cypress tests
         run: npx cypress run --headless --browser chrome
 
+      - name: Ensure reports directory exists
+        run: |
+          if [ ! -d "cypress/reports" ]; then
+            echo "Cypress reports directory does not exist."
+            exit 1
+          fi
+
       - name: Upload Cypress reports
         uses: actions/upload-artifact@v3
         with:
